@@ -1,0 +1,7 @@
+<h1>This Week</h1>
+<p><%=link_to 'New Chore', new_chore_path %></p>
+
+<% @chores.each do |chore| %>
+  <h2><%= chore.title %></h2>
+  <%= link_to 'Edit Chore', edit_chore_path(chore)%>
+<% end %>
